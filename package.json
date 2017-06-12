@@ -1,0 +1,22 @@
+{
+  "name": "chris-bootstrap-node-express",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "engines": {
+    "node": "6.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/electronicsleep/chris-bootstrap-node-express"
+  },
+  "keywords": [
+    "node",
+    "boostrap",
+    "express"
+  ],
+  "author": "Chris Robertson https://github.com/electronicsleep",
+  "license": "BSD"
+}
