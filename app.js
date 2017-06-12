@@ -1,5 +1,5 @@
 var http = require('http');
-var fs = require('fs'); //filesystem module
+var fs = require('fs'); 
 
 
 var express = require('express');
