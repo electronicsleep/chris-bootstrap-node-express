@@ -1,7 +1,11 @@
+#!/usr/bin/env node
+
+//Node Declare
 var http = require('http');
 var fs = require('fs'); 
 
 
+//Express Declare
 var express = require('express');
 var path = require('path');
 var app = express();
@@ -9,6 +13,7 @@ var app = express();
 
 app.set('port', 8080);
 
+//Use public folder for assets
 app.use(express.static(path.join(__dirname, 'public')));
 
 
