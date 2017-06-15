@@ -2,6 +2,8 @@
 
 Example website made with bootstrap node and express
 
+![Alt text](screenshot.jpg?raw=true "screenshot")
+
 # Dev
 ```
 npm install
