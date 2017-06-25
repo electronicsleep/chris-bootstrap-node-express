@@ -1,6 +1,6 @@
 # chris-bootstrap-node-express
 
-Example website made with bootstrap node and express
+Example website made with bootstrap node and express with docker integration
 
 ![Screenshot](Screenshot.jpg?raw=true "screenshot")
 
