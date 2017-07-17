@@ -11,7 +11,7 @@ var path = require('path');
 var app = express();
 
 
-app.set('port', 8080);
+app.set('port', 8000);
 
 //Use public folder for assets
 app.use(express.static(path.join(__dirname, 'public')));
