@@ -15,7 +15,8 @@
   "keywords": [
     "node",
     "boostrap",
-    "express"
+    "express",
+    "serve-favicon"
   ],
   "author": "Chris Robertson https://github.com/electronicsleep",
   "license": "BSD"
