@@ -33,3 +33,7 @@ forever start app.js
 # Resources
 
 https://nodejs.org
+
+http://expressjs.com
+
+http://getbootstrap.com/
