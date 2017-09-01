@@ -14,6 +14,10 @@ nodejs app.js
 # Docker
 ``` 
 docker-compose up
+
+# or
+
+bash start.sh
 ```
 
 # Server
@@ -28,4 +32,4 @@ forever start app.js
 
 # Resources
 
-https://nodejs.org/en/
+https://nodejs.org
