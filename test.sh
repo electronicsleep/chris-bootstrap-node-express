@@ -9,7 +9,7 @@ sleep 5
 # Example: Run Tests
 OUTPUT=$(curl localhost:8000)
 
-if [[ $OUTPUT == *"Chris"* ]];then
+if [[ $OUTPUT == *"body"* ]];then
  echo "TEST: output ok: found string"
  ERROR=0 
 else
