@@ -9,11 +9,13 @@ sleep 1
 # Example: Run Tests
 OUTPUT=$(curl localhost:8000)
 
-if [[ $OUTPUT == *"body"* ]];then
- echo "TEST: output ok: found string"
+CHECK="body"
+
+if [[ $OUTPUT == *"$CHECK"* ]];then
+ echo "TEST: ok found string: $CHECK"
  ERROR=0 
 else
- echo "TEST: output not ok: did not find string"
+ echo "TEST: error did not find string: $CHECK"
  ERROR=1
 fi
 
