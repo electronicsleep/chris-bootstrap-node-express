@@ -4,7 +4,7 @@ docker build -t nodeapp .
 CID=$(docker run -d -p 8000:8000 --name nodeapp -i nodeapp)
 echo "CID: $CID"
 
-sleep 5
+sleep 1
 
 # Example: Run Tests
 OUTPUT=$(curl localhost:8000)
@@ -16,8 +16,6 @@ else
  echo "TEST: output not ok: did not find string"
  ERROR=1
 fi
-
-sleep 5
 
 # Docker stop 
 docker stop $CID
