@@ -22,4 +22,4 @@ sleep 5
 # Docker stop 
 docker stop $CID
 
-exit $ER0RR
+exit $ERROR
