@@ -35,13 +35,6 @@ var server = app.listen(app.get('port'), function() {
     res.send('user: ' + req.params.id);
   })
 
-
-  app.get('/blog', function (req, res) {
-    res.send('Hello Blog!')
-    console.log("Loaded Blog route")
-  })
-
-
   app.get('/access', function (req, res) {
     res.send("Date and time accessed: " + Date());
 
