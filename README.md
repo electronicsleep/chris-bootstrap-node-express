@@ -9,6 +9,10 @@ Example website made with bootstrap node and express with docker integration
 npm install
 
 nodejs app.js
+
+# or
+
+bash start.sh &
 ```
 
 # Docker
