@@ -1,13 +1,13 @@
 #!/bin/bash
 docker rm nodeapp
 docker build -t nodeapp .
-CID=$(docker run -d -p 8000:8000 --name nodeapp -i nodeapp)
-echo "CID: $CID"
+ID=$(docker run -d -p 8000:8000 --name nodeapp -i nodeapp)
+echo "ID: $ID"
 
 sleep 1
 
 # Example: Run Tests
-OUTPUT=$(curl localhost:8000)
+OUTPUT=$(curl -m 10 --connect-timeout 5 localhost:8000)
 
 CHECK="body"
 
@@ -20,6 +20,6 @@ else
 fi
 
 # Docker stop 
-docker stop $CID
+docker stop $ID
 
 exit $ERROR
