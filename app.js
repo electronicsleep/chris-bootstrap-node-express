@@ -26,9 +26,47 @@ var server = app.listen(app.get('port'), function() {
   console.log('Listening: http://localhost:' + port);
 
 
-  app.get('/hello', function (req, res) {
-    res.send('Hello World!')
-    console.log("Loaded hello route")
+  app.get('/about', function (req, res) {
+    console.log("Loaded About route")
+
+    fs.readFile('public/about.html',function (err, data){
+        res.writeHead(200, {'Content-Type': 'text/html','Content-Length':data.length});
+        res.write(data);
+        res.end();
+    });
+  })
+
+
+  app.get('/linux', function (req, res) {
+    console.log("Loaded Linux route")
+
+    fs.readFile('public/linux.html',function (err, data){
+        res.writeHead(200, {'Content-Type': 'text/html','Content-Length':data.length});
+        res.write(data);
+        res.end();
+    });
+  })
+
+
+  app.get('/apple', function (req, res) {
+    console.log("Loaded Apple route")
+
+    fs.readFile('public/apple.html',function (err, data){
+        res.writeHead(200, {'Content-Type': 'text/html','Content-Length':data.length});
+        res.write(data);
+        res.end();
+    });
+  })
+
+
+  app.get('/projects', function (req, res) {
+    console.log("Loaded Projects route")
+
+    fs.readFile('public/projects.html',function (err, data){
+        res.writeHead(200, {'Content-Type': 'text/html','Content-Length':data.length});
+        res.write(data);
+        res.end();
+    });
   })
 
   app.get('/user/:id', function(req, res) {
