@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker 'node:6.11-wheezy' }
+    agent any
     stages {
         stage('version') {
             steps {
@@ -9,12 +9,16 @@ pipeline {
         }
         stage('build') {
             steps {
+                dir('chris-bootstrap-node-express) {
                 sh 'npm install'
+                }
             }
         }
         stage('run') {
             steps {
+                dir('chris-bootstrap-node-express) {
                 sh 'node app.js'
+                }
             }
         }
     }
