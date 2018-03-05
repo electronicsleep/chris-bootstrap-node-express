@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls -ltra'
-                sh 'test.sh'
+                sh 'bash test.sh'
             }
         }
     }
