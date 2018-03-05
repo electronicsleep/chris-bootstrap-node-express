@@ -9,14 +9,14 @@ pipeline {
         }
         stage('build') {
             steps {
-                dir('chris-bootstrap-node-express) {
+                dir('chris-bootstrap-node-express') {
                 sh 'npm install'
                 }
             }
         }
         stage('run') {
             steps {
-                dir('chris-bootstrap-node-express) {
+                dir('chris-bootstrap-node-express') {
                 sh 'node app.js'
                 }
             }
