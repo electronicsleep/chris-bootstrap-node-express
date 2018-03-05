@@ -3,14 +3,14 @@ pipeline {
     stages {
         stage('version') {
             steps {
+                echo 'Verify node and npm installed'
                 sh 'node --version'
                 sh 'npm --version'
             }
         }
         stage('test') {
             steps {
-                sh 'pwd'
-                sh 'ls -ltra'
+                echo 'Start node with docker and test'
                 sh 'bash test.sh'
             }
         }
