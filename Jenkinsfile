@@ -7,14 +7,9 @@ pipeline {
                 sh 'npm --version'
             }
         }
-        stage('build') {
+        stage('test') {
             steps {
-                sh 'npm install'
-            }
-        }
-        stage('run') {
-            steps {
-                sh 'node app.js'
+                sh 'test.sh'
             }
         }
     }
